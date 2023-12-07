@@ -1,0 +1,38 @@
+.imageContent:hover{
+    border: 2px solid #4F46E5;
+}
+
+.imageContent img {
+    transition: transform 0.3s ease;
+  }
+
+.imageContent img:hover {
+    transform: scale(1.1);
+}
+
+.buttonContent {
+    transition: transform 0.3s ease;
+
+}
+
+.buttonContent:hover{
+    border: 2px solid #4F46E5;
+    transform: scale(1.1);
+}
+
+.mediaScroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    
+}
+
+.mediaScroller::-webkit-scrollbar {
+    background-color:rgb(66, 66, 66); 
+}
+
+.mediaScroller::-webkit-scrollbar-thumb  {
+    background-color: rgb(123, 123, 123);
+    border-radius: 10px;
+}
+

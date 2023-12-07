@@ -1,0 +1,92 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "product_image" :  "/images/mug-1.png",
+            "product_title"  : "Acme Mug",
+            "currency" : "USD",
+            "price" : 25.00,
+            "category": "all"
+        },
+        {
+            "id": 2,
+            "product_image" :  "/images/t-shirt.png",
+            "product_title"  : "Acme Circles T-Shirt",
+            "currency" : "USD",
+            "price" : "20.00",
+            "category": "all"
+        },
+        {
+            "id": 3,
+            "product_image" :  "/images/sticker.avif",
+            "product_title"  : "Acme Rainbow Sticker",
+            "currency" : "USD",
+            "price" : "4.00",
+            "category": "all"
+        },
+        {
+            "id": 4,
+            "product_image" :  "/images/hoodie-1.png",
+            "product_title"  : "Acme Hoodie",
+            "currency" : "USD",
+            "price" : "25.00",
+            "category": "all"
+        },
+        {
+            "id": 5,
+            "product_image" :  "/images/cup-black.png",
+            "product_title"  : "Acme Mug",
+            "currency" : "USD",
+            "price" : "15.00",
+            "category": "all"
+        },
+        {
+            "id": 6,
+            "product_image" :  "/images/sticker-2.avif",
+            "product_title"  : "Acme Sticker",
+            "currency" : "USD",
+            "price" : "4.00",
+            "category": "all"
+        },
+        {
+            "id": 7,
+            "product_image" :  "/images/t-shirt.png",
+            "product_title"  : "Acme Circles T-Shirt",
+            "currency" : "USD",
+            "price" : "20.00",
+            "category": "shirts"
+        },
+        {
+            "id": 8,
+            "product_image" :  "/images/hoodie-1.png",
+            "product_title"  : "Acme Hoodie",
+            "currency" : "USD",
+            "price" : "25.00",
+            "category": "shirts"
+        },
+        {
+            "id": 9,
+            "product_image" :  "/images/t-shirt-spiral-1.avif",
+            "product_title"  : "Acme Prism T-Shirt",
+            "currency" : "USD",
+            "price" : "25.00",
+            "category": "shirts"
+        },
+        {
+            "id": 10,
+            "product_image" :  "/images/sticker-2.avif",
+            "product_title"  : "Acme Sticker",
+            "currency" : "USD",
+            "price" : "4.00",
+            "category": "stickers"
+        },
+        {
+            "id": 11,
+            "product_image" :  "/images/sticker.avif",
+            "product_title"  : "Acme Rainbow Sticker",
+            "currency" : "USD",
+            "price" : "4.00",
+            "category": "stickers"
+        }
+    ]
+}

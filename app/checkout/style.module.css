@@ -1,0 +1,21 @@
+.checkoutSection {
+    display: grid;
+    grid-template-columns: calc(50% +66px) 1fr;
+}
+
+.search  {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    align-items: center;
+    display: flex;
+    margin-right: 1rem;
+   
+    
+}
+
+.shoppingCart  {
+    stroke: #ff0000 !important; 
+    stroke-width: 2px ; 
+}
+ 

@@ -1,0 +1,84 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    background-color: black;
+    text-align: center;
+   
+}
+
+.logo svg {
+    height: 16px;
+    width: 16px;
+    fill: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ul li .content:hover {
+    color: white;
+    text-decoration: underline;
+    
+
+}
+
+form .inputSearch {
+    width: 100%;
+    background-color:transparent;
+    border-radius: 0.75rem;
+    font-weight: 600;
+}
+
+.search  {
+   position: absolute;
+   top: 0;
+   right: 0;
+   align-items: center;
+   display: flex;
+   margin-right: 1rem;
+   
+}
+
+.addCart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    
+}
+
+.addCart svg {
+    height: 16px;
+    width: 16px;
+}
+
+.addCart svg:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
