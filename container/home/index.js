@@ -12,7 +12,7 @@ function HomeSection() {
             <div className={`${Style.item1} `} >
                 <Link className="position-relative d-block aspect-square h-100 w-100  " href="/product/id">
                     <div class={`${Style.imageContent}  d-flex h-100 w-100 aligns-items-center borderColor  justify-content-center rounded-lg bg-black`}>
-                        <Image className='object-contain' src="/images/t-shirt.png"  layout='fill' />
+                        <Image className='object-contain' src="/images/t-shirt.png"  layout='fill'   />
                         <div class={`${Style.content} bottom-30  px-20 pb-4 `}>
                             <div class="d-flex borderColor align-items-center rounded-full bg-black font-weight-700 p-2">
                                 <h3 className="px-3 flex-grow text-center text-sm  ">Acme Drawstring Bag</h3>

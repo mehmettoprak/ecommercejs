@@ -6,9 +6,11 @@
     border-top: 1px solid #e5e5e5; 
     font-size: 0.875rem; 
     border-color: #4a5568; 
-  }
+}
 
-  .logo {
+
+.logo {
+
     height: 30px;
     width: 30px;
     display: flex;
@@ -30,7 +32,7 @@
 
 }
 
- ul li .footerContent {
+ul li .footerContent {
     display: flex;
     flex-direction: column;
     font-weight: 600;
