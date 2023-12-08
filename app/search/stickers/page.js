@@ -14,7 +14,7 @@ function Stickers() {
                       <div className=" px-2 pb-4 position-absolute bottom-0 strat-0 d-flex" >
                           <div className="d-flex borderColor align-items-center rounded-full bg-black font-weight-700 p-2">
                               <h3 className="px-3 flex-grow text-center text-sm  ">Acme Mug</h3>
-                              <p className="flex-none text-sm bg-primary p-2 rounded-full  text-white">$12.00<span class="ms-1 ">USD</span></p>
+                              <p className="flex-none text-sm bg-primary p-2 rounded-full  text-white">$12.00<span className="ms-1 ">USD</span></p>
                           </div>
                       </div>
                   </div>
@@ -27,7 +27,7 @@ function Stickers() {
                       <div className=" px-2 pb-4 position-absolute bottom-0 strat-0 d-flex" >
                           <div className="d-flex borderColor align-items-center rounded-full bg-black font-weight-700 p-2">
                               <h3 className="px-3 flex-grow text-center text-sm  ">Acme Mug</h3>
-                              <p className="flex-none text-sm bg-primary p-2 rounded-full  text-white">$12.00<span class="ms-1 ">USD</span></p>
+                              <p className="flex-none text-sm bg-primary p-2 rounded-full  text-white">$12.00<span className="ms-1 ">USD</span></p>
                           </div>
                       </div>
                   </div>
