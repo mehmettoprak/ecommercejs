@@ -28,8 +28,8 @@ function Header() {
                   <div className="ms-2 align-items-sm-center d-flex  d-lg-none d-xl-block  d-md-none fontSize-14 fw-medium text-uppercase textWhite">Acme Store</div>
               </Link>
             </div>
-        <nav className='flex-item d-flex  navbar-expand-md'> 
-          <div className="offcanvas d-flex flex-column flex-md-row  offcanvas-start   " tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> 
+          <nav className='flex-item d-flex  navbar-expand-md'> 
+            <div className="offcanvas d-flex flex-column flex-md-row  offcanvas-start  bg-black  " tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> 
               <div className="offcanvas-header  ">
                 <button className='borderColor rounded-lg ' type="button" data-bs-dismiss="offcanvas" aria-label="Close"  >
                   <div className={`${Style.addCart}  `}>

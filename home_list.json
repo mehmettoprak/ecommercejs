@@ -1,0 +1,28 @@
+{
+    "home_list": [
+        {
+            "id": 1,
+            "product_image" :  "/images/t-shirt.png",
+            "product_title"  : "Acme Circles T-Shirt",
+            "currency" : "USD",
+            "price" : "25.00",
+            "category": "all"
+        },
+        {
+            "id": 2,
+            "product_image" :  "/images/bag-1-dark.png",
+            "product_title"  : "Acme Drawstring Bag",
+            "currency" : "USD",
+            "price" : "12.00",
+            "category": "all"
+        },
+        {
+            "id": 3,
+            "product_image" :  "/images/cup-black.png",
+            "product_title"  : "Acme Cup",
+            "currency" : "USD",
+            "price" : "15.00",
+            "category": "all"
+        }
+    ]
+}

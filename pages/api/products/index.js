@@ -1,5 +1,6 @@
-import Products from "../../../products.json"
+import Products from "../../../data.json"
 
-export default function handeler(req, res){
+
+export default function handler (req,res){
     res.status(200).json(Products);
 }

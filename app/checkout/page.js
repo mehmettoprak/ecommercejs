@@ -114,7 +114,7 @@ function Checkout() {
         <div className='p-3 mt-2'>
             <h2 className='pb-2 fs-17 font-weight-600' >Contact</h2>
             <div>
-                <input className='w-100 p-3 rounded-lg borderColor text-white' id="email" name="email" placeholder="Email or mobile phone number" type="text" inputmode="text" aria-labelledby="email-label" autocomplete="shipping email" autofocus="true" data-protected-input="true" className="" autocapitalize="off" />  
+                <input className='w-100 p-3 rounded-lg borderColor text-white' id="email" name="email" placeholder="Email or mobile phone number" type="text" inputmode="text" aria-labelledby="email-label" autocomplete="shipping email" autofocus="true" data-protected-input="true"  autocapitalize="off" />  
             </div>
             <div className='d-flex mt-2'>
               <div>
@@ -128,17 +128,17 @@ function Checkout() {
               <h2 className=" font-weight-600 fs-17 pb-2">Shipping address</h2>
               <div className=''>
                   {/* <label>Country/Region</label> */}
-                  <select className='w-100 borderColor p-3 text-white rounded-lg' name="countryCode" id="Select16" required="" autocomplete="shipping country" className="select-style">
+                  <select className='w-100 borderColor p-3 text-white rounded-lg' name="countryCode" id="Select16" required="" autocomplete="shipping country" >
                     <option value="US">United States</option>
                   </select>
               </div>
           </div>
           <div className='d-flex gap-2 justify-content-center p-3'>
             <div className=' w-100'>
-              <input className='w-100 borderColor p-3 text-white rounded-lg' id="TextField43" name="firstName" placeholder="First name (optional)" type="text" aria-required="false" aria-labelledby="TextField43-label" autocomplete="shipping given-name" data-protected-input="true" className="" />
+              <input className='w-100 borderColor p-3 text-white rounded-lg' id="TextField43" name="firstName" placeholder="First name (optional)" type="text" aria-required="false" aria-labelledby="TextField43-label" autocomplete="shipping given-name" data-protected-input="true"  />
             </div>
             <div className='w-100'>
-                <input className='w-100 borderColor text-white p-3 rounded-lg' id="TextField44" name="lastName" placeholder="Last name" required="" type="text" aria-required="true" aria-labelledby="TextField44-label" autocomplete="shipping family-name" data-protected-input="true" className="" />
+                <input className='w-100 borderColor text-white p-3 rounded-lg' id="TextField44" name="lastName" placeholder="Last name" required="" type="text" aria-required="true" aria-labelledby="TextField44-label" autocomplete="shipping family-name" data-protected-input="true"  />
             </div>
           </div>
           <div className='p-3 position-relative'>

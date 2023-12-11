@@ -89,6 +89,11 @@
         grid-template-columns:none;
     }
 
+    .content {
+        bottom: 0 !important;
+        padding-left: 1rem !important;
+    }
+
     
     
   

@@ -1,0 +1,20 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "product_image" :  "/images/t-shirt.png",
+            "product_gallery" :  [
+              "/images/t-shirt.png",
+              "/images/t-shirt-2.png",
+              "/images/t-shirt-circles-blue.png"
+            ],
+            "colors": ["black", "white", "blue"],
+            "sizes": ["XS", "S", "M", "L", "XL"],
+            "product_title"  : "Acme Circles T-Shirt",
+            "currency" : "USD",
+            "price" : "25.00",
+            "category": "all"
+        }
+  
+    ]
+  }
