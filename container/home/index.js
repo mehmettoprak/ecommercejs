@@ -31,7 +31,7 @@ import homeList from '@/app/libs/homeList'
             {home_list.splice(0 , 1).map(item => {
             return(
             <div key={item.id}  className={`${Style.item1} `} >
-                <Link className="position-relative d-block aspect-square h-100 w-100 " href={`/prduct${product.id}`}>
+                <Link className="position-relative d-block aspect-square h-100 w-100 " href={`/prduct`}>
                     <div className={`${Style.imageContent}  d-flex h-100 w-100 aligns-items-center borderColor  justify-content-center rounded-lg bg-black`}>
                         <Image className='object-contain'  src={item.product_image} fill  />
                         <div className={`${Style.content} bottom-30  px-20 pb-4 `}>
@@ -69,7 +69,7 @@ import homeList from '@/app/libs/homeList'
             {products.map(product => {
                 return(
                 <li key={product.id} className=" position-relative max-height-275 max-width-475 height-30 aspect-square col-6 col-md-4 ">
-                    <Link className="position-relative  h-100 w-100  "  href={`/product/1`}>
+                    <Link className="position-relative  h-100 w-100  "  href={`/product/${product.id}`}>
                         <div className={`${Style.imageContent}  d-flex h-100 w-100 aligns-items-center borderColor  justify-content-center rounded-lg bg-black`}>
                             <Image className=' object-contain' src={product.product_image}  fill/>
                             <div className={`${Style.content} px-2 pb-4 `}>

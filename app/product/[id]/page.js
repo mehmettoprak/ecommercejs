@@ -5,9 +5,6 @@ import { FaArrowLeft } from 'react-icons/fa'
 import { FaArrowRight } from 'react-icons/fa'
 import { FaPlus } from 'react-icons/fa'
 import Style  from "./style.module.css" 
-import Script from 'next/script'
-import Head from 'next/head'
-
 import getProduct from '@/app/libs/getProduct'
 import getProducts from '@/app/libs/getProducts'
 
@@ -17,14 +14,12 @@ import getProducts from '@/app/libs/getProducts'
 
     const product = await getProduct(id);
 
-    console.log(product)
-
     const data = await getProducts();
 
     const products = data.products || [];
 
   return (    
-    <div className='px-2 mx-auto ' >
+    <div className='px-2 mx-auto  ' >
         <div className=' d-flex px-4 borderColor flex-column   flex-md-row rounded-lg bg-black p-12'>
             <div className='col-12 h-100 col-md-8 '>
                 <div className='position-relative big-img  max-height-550 w-100 overflow-hidden aspect-square'>
@@ -51,8 +46,7 @@ import getProducts from '@/app/libs/getProducts'
                             </div>
                         </Link>
                     </li>
-                    ))}
-                    
+                    ))}                  
                 </ul>
             </div>
             <div className=' col-12 col-md-4'>
@@ -62,32 +56,32 @@ import getProducts from '@/app/libs/getProducts'
                         <p className="  bg-primary p-2 rounded-full font-weight-700 text-white">${product.price}<span className="ms-1 ">USD</span></p>
                     </div>
                 </div>
-                <dl className='mb-5'>
-                    <td className='text-uppercase font-weight-600 pb-3'>color</td>
-                    <dd className='d-flex gap-3' >
+                <dl className=''>
+                    <td className='text-uppercase font-weight-600 mb-5 pb-3'>{product.colors_text}</td>
+                    <td className='d-flex gap-3' >
                     {product.colors.map((color, index) => (
                         <button  key={index} className={`${Style.buttonContent} text-white py-1 px-2 min-width-48 bg-neutral-900 rounded-full borderColor font-weight-600`}>{color}</button>
                     ))}
-                    </dd>
-
+                    </td>
                 </dl>
-                <dl className='mt-3 mb-5'>
-                    <td className='text-uppercase font-weight-600 pb-3'>size</td>
-                    <dd className='d-flex gap-3 flex-wrap' >
+                <dl className='mt-3'>
+                    <td className='text-uppercase font-weight-600 pb-3 mb-5'>{product.sizes_text}</td>
+                    <td className='d-flex gap-3 flex-wrap pb-3' >
                         {product.sizes.map((size, index) =>(
                         <button key={index} className={`${Style.buttonContent} text-white py-1 px-2 min-width-67 bg-neutral-900 rounded-full borderColor font-weight-600`}>{size}</button>
                         ))}                     
-                    </dd>                   
+                    </td>                   
                 </dl>
-                <div className='paleWhite mt-2'>60% combed ringspun cotton/40% polyester jersey tee.</div>
+                <div className='paleWhite mt-2'>{product.body}</div>
                 <form className=' mt-3'>
-                    <button className='p-3 fs-5 position-relative text-white rounded-full bg-primary d-flex align-items-center justify-content-center w-100'>
+                    <button  className='p-3 fs-5 position-relative text-white rounded-full bg-primary d-flex align-items-center justify-content-center w-100'>
                         <div className='position-absolute start-0 ps-3'>
                             <FaPlus />  
                         </div>
                         Add To Cart
                     </button>
                 </form>
+                
             </div>
         </div>
         <div className='py-4'>

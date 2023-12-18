@@ -1,10 +1,11 @@
 
 import { Inter } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BootsrapClient from '@/components/BootsrapClient';
 import './globals.css'
-import Header from '@/components/header'
-import Footer from '@/components/footer'
+import App from '@/components/App';
+
+import { StoreProvider } from '@/redux/StoreProvider';
+
 
 
 
@@ -29,15 +30,9 @@ export default function RootLayout({ children  }) {
     <html lang="en">
      
       <body className={inter.className}>
-
-
-        <Header /> 
-        {children}
-
-        <BootsrapClient />
-
-        <Footer />
-      
+        <StoreProvider>
+            <App>{children}</App>
+        </StoreProvider>
       </body>
     </html>
   )

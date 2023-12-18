@@ -4,6 +4,16 @@
             "id": 1,
             "product_image" :  "/images/mug-1.png",
             "product_title"  : "Acme Mug",
+            "product_gallery" :  [
+                "/images/mug-1.png",
+                "/images/mug-2.png"
+                
+            ],
+            "colors" :[],
+            "sizes" : [],
+            "colors_text" :[],
+            "sizes_text" :[],
+            "body":"12 oz Beck Cork-Bottom Mug.",
             "currency" : "USD",
             "price" : 25.00,
             "category": "all"
@@ -12,6 +22,16 @@
             "id": 2,
             "product_image" :  "/images/t-shirt.png",
             "product_title"  : "Acme Circles T-Shirt",
+            "product_gallery" :  [
+                "/images/t-shirt.png",
+                "/images/t-shirt-2.png",
+                "/images/t-shirt-circles-blue.png"
+            ],
+            "body" :"60% combed ringspun cotton/40% polyester jersey tee.",
+            "colors": ["Black", "White", "Blue"],
+            "colors_text" :"color",
+            "sizes_text" :"sizes",
+            "sizes": ["XS", "S", "M", "L", "XL"],
             "currency" : "USD",
             "price" : 20.00,
             "category": "all"
@@ -20,6 +40,12 @@
             "id": 3,
             "product_image" :  "/images/sticker.avif",
             "product_title"  : "Acme Rainbow Sticker",
+            "product_gallery" :[],
+            "sizes" :[],
+            "sizes_text" :[],
+            "colors" :[],
+            "colors_text" :[],
+            "body" :[],
             "currency" : "USD",
             "price" : 4.00,
             "category": "all"
@@ -28,6 +54,16 @@
             "id": 4,
             "product_image" :  "/images/hoodie-1.avif",
             "product_title"  : "Acme Hoodie",
+            "product_gallery" :[
+                "/images/hoodie-1.avif",
+                "/images/hoodie-2.png"
+
+            ],
+            "sizes": ["XS", "S", "M", "L", "XL"],
+            "sizes_text" :"sizes",
+            "colors" :[],
+            "colors_text" :[],
+            "body" :"Fabric blend of Supima Cotton and Micromodal.",
             "currency" : "USD",
             "price" : 25.00,
             "category": "all"
@@ -35,15 +71,33 @@
         {
             "id": 5,
             "product_image" :  "/images/cup-black.png",
-            "product_title"  : "Acme Mug",
+            "product_title"  : "Acme Cup",
+            "product_gallery" :[
+                "/images/cup-black.png", 
+                "/images/cup-white.png"
+            ],
+            "colors" :["Black", "White"],
+            "colors_text" :"color",
+            "sizes" :[],
+            "sizes_text" :[],
+            "body" :"12oz double wall ceramic body with a padded bottom.",
             "currency" : "USD",
-            "price" : 15.00,
+            "price" : 15.00 ,
             "category": "all"
         },
         {
             "id": 6,
             "product_image" :  "/images/shoes-1.png",
             "product_title"  : "Acme Slip-On Shoes",
+            "product_gallery" :[
+                "/images/shoes-1.png",
+                "/images/shoes-2.png"
+            ],
+            "sizes" :[1 ,1.5, 2, 2.5 , 3 , 3.5],
+            "sizes_text":"sizes",
+            "colors" :[],
+            "colors_text":[],
+            "body" :"Step into summer! Every time your head looks down,you'll see these beauties, and your mood bounces right back up.Sleek, easy, and effortlessly stylish.",
             "currency" : "USD",
             "price" : 4.00,
             "category": "all"
@@ -52,6 +106,15 @@
             "id": 7,
             "product_image" :  "/images/jacket-army.png",
             "product_title"  : "Acme Bomber Jacket",
+            "product_gallery" :[
+                "/images/jacket-army.png",
+                "/images/bomber-jacket-black.png"
+            ],
+            "colors" : ["Army", "Black"],
+            "colors_text":"color",
+            "sizes": ["XS", "S", "M", "L", "XL"],
+            "sizes_text":"sizes",
+            "body" :"The multi-season must-have jacket: light and classic for daily wear, with a soft fleece lining for extra warmth.",
             "currency" : "USD",
             "price" : 20.00,
             "category": "shirts"
@@ -60,14 +123,32 @@
             "id": 8,
             "product_image" :  "/images/cap-black.png",
             "product_title"  : "Acme Baby Cap",
+            "product_gallery" :[
+                "/images/cap-black.png", 
+                "/images/baby-cap-white.png"
+            ],
+            "colors" :["Black", "White", "Gray"],
+            "colors_text" :"color",
+            "sizes" :[],
+            "sizes_text":[],
+            "body" : "100% combed ringspun cotton",
             "currency" : "USD",
-            "price" : 25.00,
+            "price" : 20.00,
             "category": "shirts"
         },
         {
             "id": 9,
             "product_image" :  "/images/t-shirt-spiral-1.avif",
             "product_title"  : "Acme Prism T-Shirt",
+            "product_gallery" :[
+                "/images/t-shirt-spiral-1.avif",
+                "/images/t-shirt-spiral-2.png"
+            ],
+            "sizes": ["XS", "S", "M", "L", "XL"],
+            "sizes_text":"sizes",
+            "colors" :[],
+            "colors_text" :[],
+            "body" :"60% combed ringspun cotton/40% polyester jersey tee.",
             "currency" : "USD",
             "price" : 25.00,
             "category": "shirts"
@@ -76,14 +157,29 @@
             "id": 10,
             "product_image" :  "/images/baby-beige-1.png",
             "product_title"  : "Acme Baby Onesie",
+            "product_gallery" :[
+                "/images/baby-beige-1.png",
+                "/images/baby-beige-black.png"
+            ],
             "currency" : "USD",
+            "colors" :["Black", "White", "Beige"],
+            "colors_text":"color",
+            "sizes": ["NB", "3M", "6M", "12M", "18M"],
+            "sizes_text":"sizes",
+            "body" :[],
             "price" : 4.00,
             "category": "stickers"
         },
         {
             "id": 11,
             "product_image" :  "/images/sticker.avif",
-            "product_title"  : "Acme Rainbow Sticker",
+            "product_title"  : "Acme  Sticker",
+            "product_gallery" :"",
+            "colors" :[],
+            "colors_text" :[],
+            "sizes" :[],
+            "sizes_text" :[],
+            "body" :[],
             "currency" : "USD",
             "price" : 4.00,
             "category": "stickers"
@@ -92,9 +188,20 @@
             "id": 12,
             "product_image" :  "/images/cowboy-hat.png",
             "product_title"  : "Acme Cowboy Hat",
+            "product_gallery" :[
+                "/images/cowboy-hat.png",
+                "/images/cowboy-hat-tan-1.png"
+
+            ],
+            "sizes" :["6 3/4", "6 7/8, 7, 7 1/8"],
+            "sizes_text" :"sizes",
+            "colors" :["Black" ,"Tan"],
+            "colors_text" :"color",
+            "body" : "Part of our Buffalo collection, this cowboy hat is made in the USA of high-quality, weather-resistant 4X buffalo felt. Its classic Western profile features a classic cattleman crease",
             "currency" : "USD",
             "price" : 160.00,
             "category": "stickers"
         }
     ]
 }
+
