@@ -7,8 +7,7 @@ import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
 import { FaMinus } from 'react-icons/fa';
-import { FaPlus } from 'react-icons/fa';
-import CartPage from '../../app/cart/page';
+
 
 
 
@@ -105,7 +104,7 @@ import CartPage from '../../app/cart/page';
               </svg>
               <p className="mt-4  text-center text-large font-weight-700" style={{fontSize:"1.5rem"}}>Your cart is empty.</p>
             </div>
-            <CartPage />
+            {/* <CartPage /> */}
           </div>
         </div>
       </div>
