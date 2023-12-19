@@ -1,4 +1,4 @@
-
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowLeft } from 'react-icons/fa'
@@ -7,16 +7,73 @@ import { FaPlus } from 'react-icons/fa'
 import Style  from "./style.module.css" 
 import getProduct from '@/app/libs/getProduct'
 import getProducts from '@/app/libs/getProducts'
+import { useState, useEffect } from 'react';
+
+
+ 
 
 
 
- async function PraductPage({params: {id}}) {
+ function PraductPage({params: {id}}) {
+    
+    const [cartItems, setCartItems] = useState([]);
 
-    const product = await getProduct(id);
+     const [loading, setLoading] = useState(true);
 
-    const data = await getProducts();
+    const [product, setProduct] = useState({});
+    const [products, setProducts] = useState([]);
 
-    const products = data.products || [];
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const product = await getProduct(id);
+          setProduct(product);
+  
+          const data = await getProducts();
+          const products= data.products || [];
+          setProducts(products);
+  
+          
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        } 
+        finally {
+           setLoading(false);
+           }
+      };
+    
+      fetchData();
+    }, [id]);
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+   
+
+   
+    const handleAddToCart = () => {
+      
+      const existingItem = cartItems.find((item) => item.id === product.id);
+  
+      if (existingItem) {
+       
+        const updatedCart = cartItems.map((item) =>
+          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+        );
+        setCartItems(updatedCart);
+      } else {
+        
+        setCartItems([...cartItems, { ...product, quantity: 1 }]);
+        console.log(cartItems)
+      }
+
+      
+    };
+
+    
+   
+    
 
   return (    
     <div className='px-2 mx-auto  ' >
@@ -73,9 +130,9 @@ import getProducts from '@/app/libs/getProducts'
                     </td>                   
                 </dl>
                 <div className='paleWhite mt-2'>{product.body}</div>
-                <form className=' mt-3'>
+                <form className=' mt-3' onSubmit={handleAddToCart}>
                     <button  className='p-3 fs-5 position-relative text-white rounded-full bg-primary d-flex align-items-center justify-content-center w-100'>
-                        <div className='position-absolute start-0 ps-3'>
+                        <div onClick={handleAddToCart} className='position-absolute start-0 ps-3'>
                             <FaPlus />  
                         </div>
                         Add To Cart
@@ -107,6 +164,7 @@ import getProducts from '@/app/libs/getProducts'
                 })}
             </ul>
         </div>
+        
     </div>
   )
 }

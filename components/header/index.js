@@ -8,7 +8,8 @@ import { FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
 import { FaMinus } from 'react-icons/fa';
 import { FaPlus } from 'react-icons/fa';
-import { useSelector } from 'react-redux';
+import CartPage from '../../app/cart/page';
+
 
 
 
@@ -18,7 +19,7 @@ import { useSelector } from 'react-redux';
 
   function Header() {
 
-    const {loading , cartItems ,itemPrice} = useSelector((state) =>state.cart)
+    
 
   
 
@@ -80,7 +81,7 @@ import { useSelector } from 'react-redux';
           <button className='borderColor rounded-lg position-relative ' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
             <div className={`${Style.addCart}  `}>
               <div className='bg-primary d-flex  p-2 w-25 h-25 font-weight-600 rounded align-items-center justify-content-center  position-absolute top-0 -mt-3 -me-1 end-0'>
-                  {loading ? '' :cartItems.reduce((a,c) => a+c.qty ,0)}
+                  {/* {loading ? '' :cartItems.reduce((a,c) => a+c.qty ,0)} */}
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className="textWhite  ">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path>
@@ -104,68 +105,7 @@ import { useSelector } from 'react-redux';
               </svg>
               <p className="mt-4  text-center text-large font-weight-700" style={{fontSize:"1.5rem"}}>Your cart is empty.</p>
             </div>
-            <div className='d-flex d-none h-100 overflow-hidden flex-column justify-content-between p-1'>
-              <ul className=' py-3 overflow-auto flex-grow-1'>
-                <li className='d-flex border-b  my-2 '>
-                  <div className='d-flex justify-content-between align-content-center pb-4'>                     
-                      <div className='d-flex '>                       
-                        <div className='borderColor rounded-lg bg-neutral-900 position-relative '>
-                            <div className='position-absolute -mt-3 ms-5 end-0  -me-1   '>
-                              <button className=' borderColor   rounded-full  bg-neutral-900 d-flex align-content-center justify-content-center'>
-                                    <FaTimes  className='text-black ' />
-                              </button>
-                            </div>
-                            <Link href="#">
-                                  <Image className='object-contain ' src="/images/t-shirt-2.png" width={64} height={64} />
-                            </Link>
-                        </div>
-                        <div className='d-flex flex-column ps-2 '>
-                                <span className="ps-4">Acme T-Shirt</span>
-                                <p className='textColor ps-4' >1</p>
-                            </div>
-                      </div>
-                      <div className='d-flex flex-column'>
-                          <p className="d-flex justify-content-end ">
-                            $90,00
-                            <span className="ms-2">USD</span>
-                          </p>
-                          <div className='borderColor rounded-full d-flex px-2 mt-2 '>
-                              <button className='btn border-0'>
-                                  <FaMinus className='' />
-                              </button>
-                              <p className='d-flex text-center align-items-center'>
-                                  <span>2</span>
-                              </p>
-                              <button className='btn border-0'>
-                                  <FaPlus className=' ' />
-                              </button>
-                          </div>
-                      </div>
-                  </div>   
-                </li>
-              </ul>
-            </div> 
-            <div className='d-flex d-none flex-column  '>
-              <div className='d-flex justify-content-between border-b pb-2 mb-3 '>
-                <p className='textColor'>Taxes</p>
-                <p className='fs-5'>
-                  $0,00
-                  <span className='ms-2'>USD</span>
-                </p>
-              </div>
-              <div className='d-flex justify-content-between border-b pb-2 mb-3 '>
-                <p className='textColor'>Shipping</p>
-                <p className='textColor'>Calculated at checkout</p>
-              </div>
-              <div className='d-flex justify-content-between border-b pb-2 mb-3 '>
-                <p className='textColor'>Total</p>
-                <p className='fs-5'>
-                  $0,00
-                  <span className='ms-2'>USD</span>
-                </p>
-              </div>
-            </div>
-            <Link className='bg-primary d-none text-white rounded-full text-center p-3 my-2 d-block' href="#">Proceed to Checkout</Link> 
+            <CartPage />
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
-// import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 // import Cookies from "js-cookie";
+
+
 
 
 
@@ -69,3 +71,38 @@
 // export const {addToCart , removeFromCart ,hideLoading} = cartSlice.actions;
 
 // export default cartSlice.reducer
+
+
+
+// const productSlice = createSlice({
+//     name :"product",
+//     initialState : {
+//         data :[],
+//         loading :true ,
+//         error :null,
+//         products :[]
+//     },
+
+//     reducers : {
+//         getProductSucces :(state,action) => {
+//             state.data =action.payload ;
+//             state.loading = true ;
+//             state.error =null ;
+//         },
+//         getProductFailure : (state ,action) => {
+//             state.data =null ;
+//             state.loading =false ;
+//             state.error =action.payload ;
+//         },
+//         addToCart : (state ,action) => {
+//             // Carta ekleme işlemleri
+//         },
+//         removeFromCart : (state ,action) =>{
+//             // Carttan çıkarma işlemleri
+//         }
+//     }
+// })
+
+// export const {getProductSucces , getProductFailure ,addToCart , removeFromCart} = productSlice.actions ;
+
+// export default productSlice.reducer ;
