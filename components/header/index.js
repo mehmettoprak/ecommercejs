@@ -1,4 +1,4 @@
-
+"use client"
 import React from 'react'
 import Style from "./style.module.css"
 import Link from 'next/link'
@@ -7,6 +7,9 @@ import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
 import { FaMinus } from 'react-icons/fa';
+
+import CartPage from '@/components/cart';
+import { useState } from 'react';
 
 
 
@@ -19,9 +22,9 @@ import { FaMinus } from 'react-icons/fa';
   function Header() {
 
     
-
-  
-
+  const [cartItems, setCartItems] = useState([]);
+ 
+   
   
   return (
     <div className={`${Style.navBar} p-4 `}>
@@ -98,13 +101,19 @@ import { FaMinus } from 'react-icons/fa';
                 </div>
               </button>
             </div>
-            <div className="  mt-20 d-flex w-100 flex-column align-items-center justify-content-center overflow-hidden">     
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className="height-16">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path>
-              </svg>
-              <p className="mt-4  text-center text-large font-weight-700" style={{fontSize:"1.5rem"}}>Your cart is empty.</p>
-            </div>
-            {/* <CartPage /> */}
+            {cartItems.length ===0 ? (
+                 <div className="  mt-20 d-flex w-100 flex-column align-items-center justify-content-center overflow-hidden">     
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className="height-16">
+                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path>
+                 </svg>
+                 <p className="mt-4  text-center text-large font-weight-700" style={{fontSize:"1.5rem"}}>Your cart is empty.</p>
+               </div>
+            ) :(
+              <CartPage cartItems={cartItems} setCartItems= {setCartItems} /> 
+
+            )}
+           
+               
           </div>
         </div>
       </div>

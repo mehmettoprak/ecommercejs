@@ -6,30 +6,34 @@
 // import { FaTimes, FaMinus, FaPlus } from 'react-icons/fa';
 // import Link from 'next/link';
 // import Image from 'next/image';
+// import { useEffect } from "react";
 
 // function CartPage() {
 //   const [cartItems, setCartItems] = useState([]);
+  
+  
 
-//   const handleRemove = (itemId) => {
-//     const updatedCart = cartItems.filter((item) => item.id !== itemId);
-//     setCartItems(updatedCart);
-//     console.log(cartItems)
-//   };
-
-//   const handleDecrease = (itemId) => {
-//     const updatedCart = cartItems.map((item) =>
-//       item.id === itemId ? { ...item, quantity: item.quantity - 1 } : item
-//     );
-//     setCartItems(updatedCart.filter((item) => item.quantity > 0));
-//   };
-
-//   const handleIncrease = (itemId) => {
-//     const updatedCart = cartItems.map((item) =>
-//       item.id === itemId ? { ...item, quantity: item.quantity + 1 } : item
-//     );
-//     setCartItems(updatedCart);
+  const handleRemove = (itemId) => {
+    const updatedCart = cartItems.filter((item) => item.id !== itemId);
+    setCartItems(updatedCart);
     
-//   };
+   
+  };
+
+  const handleDecrease = (itemId) => {
+    const updatedCart = cartItems.map((item) =>
+      item.id === itemId ? { ...item, quantity: item.quantity - 1 } : item
+    );
+    setCartItems(updatedCart.filter((item) => item.quantity > 0));
+  };
+
+  const handleIncrease = (itemId) => {
+    const updatedCart = cartItems.map((item) =>
+      item.id === itemId ? { ...item, quantity: item.quantity + 1 } : item
+    );
+    setCartItems(updatedCart);
+    
+  };
  
 
 //   return (
